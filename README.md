@@ -7,7 +7,7 @@ on composing GeoServer SLD in such a way to have less SLD to write. Does that ma
 Anyway, these are GeoServer data directory files. Expects a Postgres/PostGIS
 database running on `localhost` and a database user `geoserver` with pass
 `geoserver`. Substitute these for your own database as needed at
-[src/data/workspaces/public/localhost/datastore.xml](../src/data/workspaces/public/localhost/datastore.xml).
+[src/data/workspaces/public/localhost/datastore.xml](./src/data/workspaces/public/localhost/datastore.xml).
 
 Also `public.asustusyksus` table in the database. This (Estonian administrative units
 [settlements layer](https://geoportaal.maaamet.ee/docs/haldus_asustus/asustusyksus_shp.zip) from
