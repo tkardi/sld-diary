@@ -10,28 +10,28 @@
     <string>features</string>
     <string>v_settlements_2</string>
   </keywords>
-  <nativeCRS class="projected">PROJCS[&quot;Estonian Coordinate System of 1997&quot;, 
-  GEOGCS[&quot;EST97&quot;, 
-    DATUM[&quot;Estonia 1997&quot;, 
-      SPHEROID[&quot;GRS 1980&quot;, 6378137.0, 298.257222101, AUTHORITY[&quot;EPSG&quot;,&quot;7019&quot;]], 
-      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
-      AUTHORITY[&quot;EPSG&quot;,&quot;6180&quot;]], 
-    PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
-    UNIT[&quot;degree&quot;, 0.017453292519943295], 
-    AXIS[&quot;Geodetic longitude&quot;, EAST], 
-    AXIS[&quot;Geodetic latitude&quot;, NORTH], 
-    AUTHORITY[&quot;EPSG&quot;,&quot;4180&quot;]], 
-  PROJECTION[&quot;Lambert_Conformal_Conic_2SP&quot;, AUTHORITY[&quot;EPSG&quot;,&quot;9802&quot;]], 
-  PARAMETER[&quot;central_meridian&quot;, 24.0], 
-  PARAMETER[&quot;latitude_of_origin&quot;, 57.517553930555565], 
-  PARAMETER[&quot;standard_parallel_1&quot;, 59.333333333333336], 
-  PARAMETER[&quot;false_easting&quot;, 500000.0], 
-  PARAMETER[&quot;false_northing&quot;, 6375000.0], 
-  PARAMETER[&quot;scale_factor&quot;, 1.0], 
-  PARAMETER[&quot;standard_parallel_2&quot;, 58.00000000000001], 
-  UNIT[&quot;m&quot;, 1.0], 
-  AXIS[&quot;Easting&quot;, EAST], 
-  AXIS[&quot;Northing&quot;, NORTH], 
+  <nativeCRS class="projected">PROJCS[&quot;Estonian Coordinate System of 1997&quot;,
+  GEOGCS[&quot;EST97&quot;,
+    DATUM[&quot;Estonia 1997&quot;,
+      SPHEROID[&quot;GRS 1980&quot;, 6378137.0, 298.257222101, AUTHORITY[&quot;EPSG&quot;,&quot;7019&quot;]],
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      AUTHORITY[&quot;EPSG&quot;,&quot;6180&quot;]],
+    PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],
+    UNIT[&quot;degree&quot;, 0.017453292519943295],
+    AXIS[&quot;Geodetic longitude&quot;, EAST],
+    AXIS[&quot;Geodetic latitude&quot;, NORTH],
+    AUTHORITY[&quot;EPSG&quot;,&quot;4180&quot;]],
+  PROJECTION[&quot;Lambert_Conformal_Conic_2SP&quot;, AUTHORITY[&quot;EPSG&quot;,&quot;9802&quot;]],
+  PARAMETER[&quot;central_meridian&quot;, 24.0],
+  PARAMETER[&quot;latitude_of_origin&quot;, 57.517553930555565],
+  PARAMETER[&quot;standard_parallel_1&quot;, 59.333333333333336],
+  PARAMETER[&quot;false_easting&quot;, 500000.0],
+  PARAMETER[&quot;false_northing&quot;, 6375000.0],
+  PARAMETER[&quot;scale_factor&quot;, 1.0],
+  PARAMETER[&quot;standard_parallel_2&quot;, 58.00000000000001],
+  UNIT[&quot;m&quot;, 1.0],
+  AXIS[&quot;Easting&quot;, EAST],
+  AXIS[&quot;Northing&quot;, NORTH],
   AUTHORITY[&quot;EPSG&quot;,&quot;3301&quot;]]</nativeCRS>
   <srs>EPSG:3301</srs>
   <nativeBoundingBox>
@@ -71,8 +71,8 @@ from&#xd;
         </geometry>
         <parameter>
           <name>hexcolumn</name>
-          <defaultValue>okood</defaultValue>
-          <regexpValidator>^.*\b(akood|okood|mkood)\b.*$</regexpValidator>
+          <defaultValue>onimi</defaultValue>
+          <regexpValidator>^.*\b(animi|onimi|mnimi)\b.*$</regexpValidator>
         </parameter>
       </virtualTable>
     </entry>
