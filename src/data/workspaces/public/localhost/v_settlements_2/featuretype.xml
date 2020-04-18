@@ -1,0 +1,92 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-5c7526b4:1718def7da1:-7ffe</id>
+  <name>v_settlements_2</name>
+  <nativeName>v_settlements_2</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-10b82032:17158077cfe:-7ffe</id>
+  </namespace>
+  <title>v_settlements_2</title>
+  <keywords>
+    <string>features</string>
+    <string>v_settlements_2</string>
+  </keywords>
+  <nativeCRS class="projected">PROJCS[&quot;Estonian Coordinate System of 1997&quot;, 
+  GEOGCS[&quot;EST97&quot;, 
+    DATUM[&quot;Estonia 1997&quot;, 
+      SPHEROID[&quot;GRS 1980&quot;, 6378137.0, 298.257222101, AUTHORITY[&quot;EPSG&quot;,&quot;7019&quot;]], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY[&quot;EPSG&quot;,&quot;6180&quot;]], 
+    PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
+    UNIT[&quot;degree&quot;, 0.017453292519943295], 
+    AXIS[&quot;Geodetic longitude&quot;, EAST], 
+    AXIS[&quot;Geodetic latitude&quot;, NORTH], 
+    AUTHORITY[&quot;EPSG&quot;,&quot;4180&quot;]], 
+  PROJECTION[&quot;Lambert_Conformal_Conic_2SP&quot;, AUTHORITY[&quot;EPSG&quot;,&quot;9802&quot;]], 
+  PARAMETER[&quot;central_meridian&quot;, 24.0], 
+  PARAMETER[&quot;latitude_of_origin&quot;, 57.517553930555565], 
+  PARAMETER[&quot;standard_parallel_1&quot;, 59.333333333333336], 
+  PARAMETER[&quot;false_easting&quot;, 500000.0], 
+  PARAMETER[&quot;false_northing&quot;, 6375000.0], 
+  PARAMETER[&quot;scale_factor&quot;, 1.0], 
+  PARAMETER[&quot;standard_parallel_2&quot;, 58.00000000000001], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;Easting&quot;, EAST], 
+  AXIS[&quot;Northing&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;3301&quot;]]</nativeCRS>
+  <srs>EPSG:3301</srs>
+  <nativeBoundingBox>
+    <minx>369032.103</minx>
+    <maxx>739152.824000001</maxx>
+    <miny>6377141.06</miny>
+    <maxy>6634018.92</maxy>
+    <crs class="projected">EPSG:3301</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>21.66525268917054</minx>
+    <maxx>28.259334224089695</maxx>
+    <miny>57.47293572619187</miny>
+    <maxy>59.842826925075215</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>v_settlements_2</name>
+        <sql>select&#xd;
+    gid, animi as settlement_name, akood as settlement_code,&#xd;
+    tyyp as settlement_type, onimi as municipality_name, okood as municipality_code,  &#xd;
+    mnimi as county_name, mkood as county_code, geom,&#xd;
+    &apos;#&apos;||right(md5(%hexcolumn%),6) as _hex&#xd;
+from&#xd;
+    public.asustusyksus
+</sql>
+        <escapeSql>false</escapeSql>
+        <keyColumn>gid</keyColumn>
+        <geometry>
+          <name>geom</name>
+          <type>Geometry</type>
+          <srid>3301</srid>
+        </geometry>
+        <parameter>
+          <name>hexcolumn</name>
+          <defaultValue>okood</defaultValue>
+          <regexpValidator>^.*\b(akood|okood|mkood)\b.*$</regexpValidator>
+        </parameter>
+      </virtualTable>
+    </entry>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-10b82032:17158077cfe:-7ffd</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

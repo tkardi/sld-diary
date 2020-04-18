@@ -1,0 +1,15 @@
+<layer>
+  <name>v_settlements_2</name>
+  <id>LayerInfoImpl-5c7526b4:1718def7da1:-7ffd</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-10b82032:17158077cfe:-7ff8</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-5c7526b4:1718def7da1:-7ffe</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>
